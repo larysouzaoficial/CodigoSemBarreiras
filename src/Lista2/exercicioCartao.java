@@ -98,7 +98,7 @@ public class exercicioCartao {
                         System.out.println("*                       ALIMENTAÇÃO                        *");
                         System.out.println("*                  Quanto deseja utilizar?                 *");
                         System.out.println("*----------------------------------------------------------*");
-                        valor = sc.nextInt();
+                        valor = sc.nextFloat();
                         alimentacao = alimentacao - valor;
                         {
                             if (alimentacao < 0) {
@@ -120,7 +120,7 @@ public class exercicioCartao {
                         System.out.println("*                        TRANSPORTE                        *");
                         System.out.println("*                  Quanto deseja utilizar?                 *");
                         System.out.println("*----------------------------------------------------------*");
-                        valor = sc.nextInt();
+                        valor = sc.nextFloat();
                         transporte = transporte - valor;
                         {
                             if (transporte < 0) {
@@ -237,7 +237,7 @@ public class exercicioCartao {
                             System.out.println("*                       ALIMENTAÇÃO                        *");
                             System.out.println("*               Quanto deseja decrementar?                 *");
                             System.out.println("*----------------------------------------------------------*");
-                            valor = sc.nextInt();
+                            valor = sc.nextFloat();
                             alimentacao = alimentacao - valor;
                             {
                                 if (alimentacao < 0) {
@@ -259,7 +259,7 @@ public class exercicioCartao {
                             System.out.println("*                        TRANSPORTE                        *");
                             System.out.println("*               Quanto deseja decrementar?                 *");
                             System.out.println("*----------------------------------------------------------*");
-                            valor = sc.nextInt();
+                            valor = sc.nextFloat();
                             transporte = transporte - valor;
                             {
                                 if (transporte < 0) {
@@ -327,7 +327,7 @@ public class exercicioCartao {
                                         System.out.println("*                       ALIMENTAÇÃO                        *");
                                         System.out.println("*               Quanto deseja acrescentar?                 *");
                                         System.out.println("*----------------------------------------------------------*");
-                                        valor = sc.nextInt();
+                                        valor = sc.nextFloat();
                                         alimentacao = alimentacao + valor;
                                         System.out.printf("*********Seu saldo no cartão alimentação é: %.2f************\n", alimentacao);
                                         System.out.println("*----------------------------------------------------------*");
@@ -342,7 +342,7 @@ public class exercicioCartao {
                                         System.out.println("*                        TRANSPORTE                        *");
                                         System.out.println("*               Quanto deseja acrescentar?                 *");
                                         System.out.println("*----------------------------------------------------------*");
-                                        valor = sc.nextInt();
+                                        valor = sc.nextFloat();
                                         transporte = transporte + valor;
                                         System.out.printf("*********Seu saldo no cartão transporte é: %.2f:************\n", transporte);
                                         System.out.println("*----------------------------------------------------------*");
