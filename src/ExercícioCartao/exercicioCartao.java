@@ -1,4 +1,4 @@
-package Lista2;
+package ExercícioCartao;
 //Dia da semana com switch case
 
 import java.util.Scanner;
@@ -7,18 +7,18 @@ public class exercicioCartao {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int op;
-        int enter;
-        float valor = 0;
+        int op; // op para escolher a opção de qual cartão deseja usar no perfil do usuário
+        int enter; // opçaõ que escolhe usuário ou administrador
+        float valor = 0; // valor que o programa pede para diminuir ou aumentar nos cartões. Inicia em 0.
         float refeicao;
         float alimentacao;
         float transporte;
-        int x = 0;
-        float valorRefeicao = 500;
-        float valorAlimentacao = 600;
-        float valorTransporte = 300;
-        int senha = 1234;
-        refeicao = valorRefeicao;
+        int x = 0; // variável para dizer que o cartão zerou. Ex.: refeição = x =  0.
+        float valorRefeicao = 500; //valor atribuído no cartão do usuário
+        float valorAlimentacao = 600; //valor atribuído no cartão do usuário
+        float valorTransporte = 300; //valor atribuído no cartão do usuário
+        int senha = 1234; // senha para o adm
+        refeicao = valorRefeicao; // refeição recebe o valor de 500
         alimentacao = valorAlimentacao;
         transporte = valorTransporte;
 
