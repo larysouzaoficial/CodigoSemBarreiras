@@ -15,14 +15,22 @@ public class Banco {
 
     // após criar os atributos, crio as variáveis para o construtor
 
-    /*public Banco(int num, String t, String d, float s){
+    public Banco(int num, String t, String d, float s){
         this.numeroDaConta = num;
         this.tipo = t;
         this.dono = d;
         this.saldo = s;
         this.status();
 
-    }*/
+    }
+
+    public Banco(int i, String cp, String larissa) {
+
+    }
+
+    public Banco() {
+
+    }
     //métodos
 
 
@@ -60,7 +68,7 @@ public class Banco {
     }
     public void sacar(float v){
         if (this.getStatus()){
-          if(this.getStatus() >= v){
+          if(this.getSaldo() >= v){
               this.setSaldo(this.getSaldo() - v);
               System.out.println("Saque realizado naconta de " + this.getDono());
           }else System.out.println("Sauq einsuficiente para saque");
@@ -75,7 +83,7 @@ public class Banco {
             v = 20;
         }
         if (this.getStatus()){
-            this.setStatus(this.getSaldo() - v);
+            this.setSaldo(this.getSaldo() - v);
             System.out.println("Mensalidade paga com sucesso por " + this.getDono());
 
         }else {
@@ -135,7 +143,7 @@ public class Banco {
     }
 
     public void status(){
-        System.out.println("Nome: " + this.getNumeroDaConta());
+        System.out.println("Número: " + this.getNumeroDaConta());
         System.out.println("Tipo: " + this.getTipo());
         System.out.println("Dono: " + this.getDono());
         System.out.println("Saldo: " + this.getSaldo());
